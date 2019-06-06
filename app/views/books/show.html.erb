@@ -16,6 +16,9 @@
   <%= image_tag(@book.picture_url) if @book.picture.present? %>
 </p>
 
+<p>
+  <%= link_to 'Comments', [@book, :comments] %>
+</p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>

@@ -10,5 +10,10 @@
   <%= @report.body %>
 </p>
 
+
+<p>
+  <%= link_to 'Comments', [@report, :comments] %>
+</p>
+
 <%= link_to 'Edit', edit_report_path(@report) %> |
 <%= link_to 'Back', reports_path %>
