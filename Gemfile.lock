@@ -49,6 +49,8 @@ GEM
     arel (9.0.0)
     awesome_print (1.8.0)
     bindex (0.7.0)
+    binding_of_caller (0.8.0)
+      debug_inspector (>= 0.0.1)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
     builder (3.2.3)
@@ -70,6 +72,7 @@ GEM
     chromedriver-helper (2.1.1)
       archive-zip (~> 0.10)
       nokogiri (~> 1.8)
+    coderay (1.1.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -79,6 +82,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
+    debug_inspector (0.0.3)
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.11.1)
@@ -87,8 +91,6 @@ GEM
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
-    jbuilder (2.9.1)
-      activesupport (>= 4.2.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -112,6 +114,15 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-alias (0.0.1)
+      binding_of_caller
+      pry
+    pry-byebug (3.7.0)
+      byebug (~> 11.0)
+      pry (~> 0.10)
     public_suffix (3.1.0)
     puma (3.12.1)
     rack (2.0.7)
@@ -207,8 +218,9 @@ DEPENDENCIES
   carrierwave
   chromedriver-helper
   coffee-rails (~> 4.2)
-  jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  pry-alias
+  pry-byebug
   puma (~> 3.11)
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
