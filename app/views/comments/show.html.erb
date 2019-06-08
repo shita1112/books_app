@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Body:</strong>
+  <strong><%= t('activerecord.attributes.comment.body') %>:</strong>
   <%= @comment.body %>
 </p>
 
-<%= link_to 'Edit', [:edit, @commentable, @comment] %> |
-<%= link_to 'Back', [@commentable, :comments] %>
+<%= link_to t('scaffold.edit'), [:edit, @commentable, @comment] %> |
+<%= link_to t('scaffold.back'), [@commentable, :comments] %>
