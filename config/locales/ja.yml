@@ -1,0 +1,64 @@
+ja:
+  scaffold:
+    show: 詳細
+    edit: 編集
+    destroy: 削除
+    new: 作成
+    back: 戻る
+    confirm: 本当によろしいですか?
+  activerecord:
+    models:
+      book: 本
+      report: 日報
+      comment: コメント
+    attributes:
+      book:
+        title: タイトル
+        memo: メモ
+        picture: 写真
+      report:
+        title: タイトル
+        body: 内容
+      comment:
+        body: 内容
+  books:
+    new:
+      new_book: 本の作成
+    edit:
+      editing_book: 本の編集
+    create:
+      created: 本が作成されました。
+    update:
+      updated: 本が更新されました。
+    destroy:
+      destroyed: 本が削除されました。
+    comments:
+      create:
+        created: コメントが作成されました。
+      update:
+        updated: コメントが更新されました。
+      destroy:
+        destroyed: コメントが削除されました。
+  reports:
+    new:
+      new_report: 日報の作成
+    edit:
+      editing_report: 日報の編集
+    create:
+      created: 日報が作成されました。
+    update:
+      updated: 日報が更新されました。
+    destroy:
+      destroyed: 日報が削除されました。
+    comments:
+      create:
+        created: コメントが作成されました。
+      update:
+        updated: コメントが更新されました。
+      destroy:
+        destroyed: コメントが削除されました。
+  comments:
+    new:
+      new_comment: コメントの作成
+    edit:
+      editing_comment: コメントの編集

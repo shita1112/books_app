@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
     @comment = @commentable.comments.build(comment_params)
 
     if @comment.save
-      redirect_to [@commentable, @comment], notice: 'Comment was successfully created.'
+      redirect_to [@commentable, @comment], notice: t('.created')
     else
       render :new
     end
@@ -27,7 +27,7 @@ class CommentsController < ApplicationController
 
   def update
     if @comment.update(comment_params)
-      redirect_to [@commentable, @comment], notice: 'Comment was successfully updated.'
+      redirect_to [@commentable, @comment], notice: t('.updated')
     else
       render :edit
     end
@@ -35,7 +35,7 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment.destroy
-    redirect_to [@commentable, :comments], notice: 'Comment was successfully destroyed.'
+    redirect_to [@commentable, :comments], notice: t('.destroyed')
   end
 
   private
