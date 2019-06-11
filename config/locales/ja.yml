@@ -11,6 +11,7 @@ ja:
       book: 本
       report: 日報
       comment: コメント
+      user: ユーザー
     attributes:
       book:
         title: タイトル
@@ -21,6 +22,11 @@ ja:
         body: 内容
       comment:
         body: 内容
+      user:
+        email: メール
+        postal_code: 郵便番号
+        address: 住所
+        bio: 自己紹介
   books:
     new:
       new_book: 本の作成
@@ -62,3 +68,8 @@ ja:
       new_comment: コメントの作成
     edit:
       editing_comment: コメントの編集
+  users:
+    edit:
+      editing_user: ユーザーの編集
+    update:
+      updated: ユーザーが更新されました。
