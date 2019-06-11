@@ -2,7 +2,7 @@ class ReportsController < ApplicationController
   before_action :set_report, only: [:show, :edit, :update, :destroy]
 
   def index
-    @reports = Report.all
+    @reports = Report.page(params[:page])
   end
 
   def show
