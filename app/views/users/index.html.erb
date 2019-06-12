@@ -1,0 +1,25 @@
+<h1><%= t('activerecord.models.user') %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t('activerecord.attributes.user.email')%></th>
+      <th><%= t('activerecord.attributes.user.postal_code')%></th>
+      <th><%= t('activerecord.attributes.user.address')%></th>
+      <th><%= t('activerecord.attributes.user.bio')%></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.postal_code %></td>
+        <td><%= user.address %></td>
+        <td><%= user.bio %></td>
+        <td><%= link_to t('scaffold.edit'), edit_user_path(user) if current_user == user %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
