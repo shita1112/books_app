@@ -1,0 +1,8 @@
+class Users::FollowersController < ApplicationController
+  before_action :authenticate_user!
+
+  def index
+    @users = User.find(params[:user_id]).followers
+    render "users/index"
+  end
+end

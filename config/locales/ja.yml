@@ -73,3 +73,13 @@ ja:
       editing_user: ユーザーの編集
     update:
       updated: ユーザーが更新されました。
+    index:
+      follow: フォロー
+      unfollow: フォロー解除
+      followers: フォロワー一覧
+      followees: フォロイー一覧
+  followings:
+    create:
+      created: フォローしました。
+    destroy:
+      destroyed: フォロー解除しました。
