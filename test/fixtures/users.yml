@@ -1,0 +1,12 @@
+tarou:
+  email: tarou@example.com
+  encrypted_password: "$2a$11$Z.p8zSa21.kHFbBGs.GHCefnzxAt6dneW2IgIuUboJIVvTjvP9wGK"
+  postal_code: 163-8001
+  address: 東京都新宿区西新宿２丁目８−１
+  bio: 太郎です。よろしくおねがいします。
+hanako:
+  email: hanako@example.com
+  encrypted_password: "$2a$11$Z.p8zSa21.kHFbBGs.GHCefnzxAt6dneW2IgIuUboJIVvTjvP9wGK"
+  postal_code: 163-8002
+  address: 東京都新宿区西新宿２丁目８−２
+  bio: 花子です。よろしくおねがいします。
