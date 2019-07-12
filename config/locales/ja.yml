@@ -78,6 +78,12 @@ ja:
       unfollow: フォロー解除
       followers: フォロワー一覧
       followees: フォロイー一覧
+    followers:
+      index:
+        followers: フォロワー一覧
+    followees:
+      index:
+        followees: フォロイー一覧
   followings:
     create:
       created: フォローしました。

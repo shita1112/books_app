@@ -3,6 +3,5 @@ class Users::FolloweesController < ApplicationController
 
   def index
     @users = User.find(params[:user_id]).followees
-    render "users/index"
   end
 end
