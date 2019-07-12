@@ -1,0 +1,6 @@
+comment_of_book_1:
+  body: いいですね。
+  commentable: book_1(Book)
+comment_of_report_1:
+  body: いいですね。
+  commentable: report_1(Report)
